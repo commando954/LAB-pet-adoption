@@ -8,3 +8,41 @@ body {
   flex-flow: row wrap; 
   justify-content: space-around;
 }
+
+.card-text {
+  text-align: center;
+  padding: 10px 0;
+  background-color: lightgray;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card {
+  margin: 10px 0;
+  border: 3px solid red;
+}
+
+.type-dino {
+  background-color: lightsalmon;
+}
+
+.type-cat {
+  background-color: lightblue;
+}
+
+.type-dog {
+  background-color: lightgreen;
+}
+
+.card-img-top {
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 3%;
+}
+
+.pet-type {
+  padding: 5px 0;
+  text-align: center;
+}

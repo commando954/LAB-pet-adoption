@@ -252,8 +252,8 @@ const pets = [
         <img src="${pet.imageUrl}" class="card-img-top" alt="...">
         <p class="pet-color">${pet.color}</p>
         <p class="pet-specialSkills">${pet.specialSkill}</p>
-        <p class="pet-type">${pet.type}</p>
       </div>
-    </div>;`
+      <p class="pet-type type-${pet.type}">${pet.type}</p>
+    </div>`
   }
   targetingApp.innerHTML = domString
