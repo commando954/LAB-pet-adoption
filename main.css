@@ -2,3 +2,9 @@ body {
   background-color: gray;
   color: black;
 }
+
+#mypets {
+  display: flex;
+  flex-flow: row wrap; 
+  justify-content: space-around;
+}
