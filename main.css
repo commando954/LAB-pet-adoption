@@ -45,3 +45,32 @@ body {
   padding: 5px 0;
   text-align: center;
 }
+
+.title-bar {
+  display: flex;
+  justify-content: center;
+}
+
+.selector {
+  color: white;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 8%;
+  margin: 25px 50px;
+}
+
+#show-all {
+  background-color: lightgray;
+}
+
+#cat-btn {
+  background-color: lightblue;
+}
+
+#dog-btn {
+  background-color: lightgreen;
+}
+
+#dino-btn {
+  background-color: lightsalmon;
+}
