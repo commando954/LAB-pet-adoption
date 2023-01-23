@@ -24,15 +24,18 @@ body {
 }
 
 .type-dino {
-  background-color: lightsalmon;
+  background-color: rgba(255, 171, 0, 0.2);
+  color: #ffb300;
 }
 
 .type-cat {
-  background-color: lightblue;
+  background-color: rgba(0, 213, 255, 0.2);
+  color: rgba(0, 174, 255, 0.808);
 }
 
 .type-dog {
-  background-color: lightgreen;
+  background-color: rgba(0, 255, 42, 0.2);
+  color: rgba(0, 70, 9, 0.589);
 }
 
 .card-img-top {
