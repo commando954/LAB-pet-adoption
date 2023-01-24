@@ -47,6 +47,7 @@ body {
 .pet-type {
   padding: 5px 0;
   text-align: center;
+  margin: 0;
 }
 
 .title-bar {
