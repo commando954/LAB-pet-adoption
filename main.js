@@ -259,6 +259,7 @@ const pets = [
         <p class="pet-specialSkills">${pet.specialSkill}</p>
       </div>
       <p class="pet-type type-${pet.type}">${pet.type}</p>
+      <button class="btn btn-danger" id="delete--${pet.id}">Delete</button>
     </div>`
   }
   renderToDom("#mypets", domString);
@@ -305,4 +306,48 @@ const pets = [
    // const filterPets = pets.filter(pets.type === "cat");
     // return filterPets;
   //}
+
+  //create new pet
+  const createPet = (event) => {
+    event.preventDefault();
+
+  const name = document.querySelector("#name");
+  const color = document.querySelector("#color");
+  const specialSkill = document.querySelector("#specialSkills");
+  const type = document.querySelector("#type")
+  const imageUrl = document.querySelector("#imageUrl");
+  
+
+  const newPet = {
+    name: name.value,
+    color: color.value,
+    specialSkill: specialSkill.value,
+    type: type.value,
+    imageUrl: imageUrl.value
+  };
+  pets.push(newPet);
+  cardsOnDom(pets);
+};
+const submitButton = document.querySelector("#form-submit");
+submitButton.addEventListener("click", createPet);
+
+//Delete adopted pet
+const petDiv = document.querySelector("#mypets");
+
+petDiv.addEventListener("click", (event) => {
+  if(event.target.id.includes("delete")) {
+    const [throwAway, petId] = event.target.id.split("--");
+    const indexOfPets = pets.findIndex(
+      (obj) => obj.id === Number(petId)
+    );
+    pets.splice(indexOfPets, 1);
+  }
+
 cardsOnDom(pets);
+});
+
+const startApp = () => {
+  cardsOnDom(pets);
+}
+
+startApp();
