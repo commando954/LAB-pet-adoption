@@ -247,7 +247,7 @@ const pets = [
   };
 
   //const targetingApp = document.querySelector("#mypets");
-  const cardsOnDom = (pets)
+  const cardsOnDom = (pets) => {
   let domString = ""
   for (const pet of pets) {
     domString +=
@@ -261,7 +261,8 @@ const pets = [
       <p class="pet-type type-${pet.type}">${pet.type}</p>
     </div>`
   }
-  renderToDom("#mypets", domString)
+  renderToDom("#mypets", domString);
+}
   //targetingApp.innerHTML = domString
 
   const filter = (pets, typeString) => {
